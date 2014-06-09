@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="BayesianNetwork">
+    <Variables>
+      <Variable name="Sistemas_Expertos" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="345" y="264" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+      <Variable name="Anteproyectos" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="603" y="266" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+      <Variable name="Inteligencia_Artificial" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="944" y="276" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+      <Variable name="ControlAutomatizado" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="757" y="268" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+      <Variable name="Simulacion" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="484" y="264" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+      <Variable name="Etica" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="202" y="260" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+      <Variable name="semiestado" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="510" y="353" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa " />
+        </States>
+      </Variable>
+      <Variable name="prom_deberes" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="137" y="68" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_talleres" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="70" y="237" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_lecciones" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="75" y="181" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_evaluaciones" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="111" y="113" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="estado_final" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="513" y="410" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+      <Variable name="prom_evaluaciones_1" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="412" y="56" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_lecciones_1" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="376" y="109" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_talleres_1" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="341" y="183" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_deberes_1" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="367" y="147" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_evaluaciones_2" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="585" y="99" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_lecciones_2" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="557" y="146" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_talleres_2" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="521" y="195" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_deberes_2" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="620" y="50" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_evaluaciones_3" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="758" y="124" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_lecciones_3" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="752" y="164" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_talleres_3" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="723" y="196" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_deberes_3" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="780" y="85" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_talleres_4" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="949" y="194" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_talleres_5" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="1220" y="220" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="mala nota" />
+          <State name="buena nota" />
+        </States>
+      </Variable>
+      <Variable name="prom_lecciones_4" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="954" y="157" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_lecciones_5" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="1255" y="148" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="mala nota" />
+          <State name="buena nota" />
+        </States>
+      </Variable>
+      <Variable name="prom_evaluaciones_4" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="957" y="121" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_evaluaciones_5" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="1175" y="329" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="mala nota" />
+          <State name="buena nota" />
+        </States>
+      </Variable>
+      <Variable name="prom_deberes_4" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="955" y="85" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="bajo" />
+          <State name="medio" />
+          <State name="alto" />
+        </States>
+      </Variable>
+      <Variable name="prom_deberes_5" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="1246" y="38" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="nota mala" />
+          <State name="nota buena" />
+        </States>
+      </Variable>
+      <Variable name="asist_general" type="finiteStates" role="chance" isInput="false">
+        <Coordinates x="505" y="468" />
+        <AdditionalProperties>
+          <Property name="Relevance" value="7.0" />
+        </AdditionalProperties>
+        <Unit />
+        <Precision>0.01</Precision>
+        <States>
+          <State name="no pasa" />
+          <State name="pasa" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="Sistemas_Expertos" />
+        <Variable name="semiestado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Anteproyectos" />
+        <Variable name="semiestado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Inteligencia_Artificial" />
+        <Variable name="semiestado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="ControlAutomatizado" />
+        <Variable name="semiestado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Simulacion" />
+        <Variable name="semiestado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Etica" />
+        <Variable name="semiestado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="semiestado" />
+        <Variable name="estado_final" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_deberes" />
+        <Variable name="Etica" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_talleres" />
+        <Variable name="Etica" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_lecciones" />
+        <Variable name="Etica" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_evaluaciones" />
+        <Variable name="Etica" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_evaluaciones_1" />
+        <Variable name="Sistemas_Expertos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_lecciones_1" />
+        <Variable name="Sistemas_Expertos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_talleres_1" />
+        <Variable name="Sistemas_Expertos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_deberes_1" />
+        <Variable name="Sistemas_Expertos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_evaluaciones_2" />
+        <Variable name="Simulacion" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_lecciones_2" />
+        <Variable name="Simulacion" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_talleres_2" />
+        <Variable name="Simulacion" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_deberes_2" />
+        <Variable name="Simulacion" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_evaluaciones_3" />
+        <Variable name="Anteproyectos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_lecciones_3" />
+        <Variable name="Anteproyectos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_talleres_3" />
+        <Variable name="Anteproyectos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_deberes_3" />
+        <Variable name="Anteproyectos" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_talleres_4" />
+        <Variable name="ControlAutomatizado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_talleres_5" />
+        <Variable name="Inteligencia_Artificial" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_lecciones_4" />
+        <Variable name="ControlAutomatizado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_lecciones_5" />
+        <Variable name="Inteligencia_Artificial" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_evaluaciones_4" />
+        <Variable name="ControlAutomatizado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_evaluaciones_5" />
+        <Variable name="Inteligencia_Artificial" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_deberes_4" />
+        <Variable name="ControlAutomatizado" />
+      </Link>
+      <Link directed="true">
+        <Variable name="prom_deberes_5" />
+        <Variable name="Inteligencia_Artificial" />
+      </Link>
+      <Link directed="true">
+        <Variable name="asist_general" />
+        <Variable name="estado_final" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Sistemas_Expertos" />
+          <Variable name="prom_deberes_1" />
+          <Variable name="prom_evaluaciones_1" />
+          <Variable name="prom_lecciones_1" />
+          <Variable name="prom_talleres_1" />
+        </Variables>
+        <Values>1.0 0.0 0.6 0.4 0.39 0.61 0.43 0.57 0.46 0.54 0.35 0.65 0.6 0.4 0.43 0.57 0.32 0.68 0.43 0.57 0.35 0.65 0.33 0.67 0.4 0.6 0.3 0.7 0.36 0.64 0.35 0.65 0.44 0.56 0.3 0.7 0.6 0.4 0.6 0.4 0.5 0.5 0.5 0.5 0.3 0.7 0.31 0.69 0.311 0.689 0.35 0.65 0.3 0.7 0.5 0.5 0.46 0.54 0.36 0.64 0.32 0.68 0.47 0.53 0.3 0.7 0.4 0.6 0.346 0.654 0.3 0.7 0.35 0.65 0.35 0.65 0.35 0.65 0.36 0.64 0.3 0.7 0.3 0.7 0.366 0.634 0.3 0.7 0.3 0.7 0.35 0.65 0.37 0.63 0.35 0.65 0.37 0.63 0.32 0.68 0.32 0.68 0.32 0.68 0.35 0.65 0.14 0.86 0.4 0.6 0.28 0.72 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.24 0.76 0.23 0.77 0.31 0.69 0.27 0.73 0.3 0.7 0.3 0.7 0.3 0.7 0.26 0.74 0.3 0.7 0.25 0.75 0.2 0.8 0.3 0.7 0.24 0.76 0.13 0.87 0.29 0.71 0.22 0.78 0.16 0.84 0.2 0.8 0.11 0.89 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Anteproyectos" />
+          <Variable name="prom_deberes_3" />
+          <Variable name="prom_evaluaciones_3" />
+          <Variable name="prom_lecciones_3" />
+          <Variable name="prom_talleres_3" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Inteligencia_Artificial" />
+          <Variable name="prom_deberes_5" />
+          <Variable name="prom_evaluaciones_5" />
+          <Variable name="prom_lecciones_5" />
+          <Variable name="prom_talleres_5" />
+        </Variables>
+        <Values>1.0 0.0 0.95 0.05 0.31 0.69 0.3 0.7 0.42 0.58 0.33 0.67 0.3 0.7 0.2 0.8 0.6 0.4 0.4 0.6 0.3 0.7 0.17 0.83 0.32 0.68 0.25 0.75 0.2 0.8 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="ControlAutomatizado" />
+          <Variable name="prom_deberes_4" />
+          <Variable name="prom_evaluaciones_4" />
+          <Variable name="prom_lecciones_4" />
+          <Variable name="prom_talleres_4" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Simulacion" />
+          <Variable name="prom_deberes_2" />
+          <Variable name="prom_evaluaciones_2" />
+          <Variable name="prom_lecciones_2" />
+          <Variable name="prom_talleres_2" />
+        </Variables>
+        <Values>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Etica" />
+          <Variable name="prom_deberes" />
+          <Variable name="prom_lecciones" />
+          <Variable name="prom_talleres" />
+          <Variable name="prom_evaluaciones" />
+        </Variables>
+        <Values>1.0 0.0 0.6 0.4 0.7 0.3 0.6 0.4 0.43 0.57 0.6 0.4 0.5 0.5 0.455 0.545 0.7 0.3 0.6 0.4 0.35 0.65 0.8 0.2 0.4 0.6 0.35 0.65 0.8 0.2 0.4 0.6 0.45 0.55 0.7 0.3 0.44 0.56 0.6 0.4 0.7 0.3 0.435 0.565 0.4 0.6 0.65 0.35 0.4 0.6 0.4 0.6 0.3 0.7 0.9 0.1 0.31 0.69 0.6 0.4 0.33 0.67 0.3 0.7 0.5 0.5 0.31 0.69 0.46 0.54 0.48 0.52 0.35 0.65 0.33 0.67 0.55 0.45 0.3 0.7 0.3 0.7 0.7 0.3 0.3 0.7 0.32 0.68 0.6 0.4 0.32 0.68 0.33 0.67 0.46 0.54 0.301 0.699 0.32 0.68 0.7 0.3 0.29 0.71 0.28 0.72 0.2 0.8 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.15 0.85 0.3 0.7 0.3 0.7 0.3 0.7 0.29 0.71 0.27 0.73 0.3 0.7 0.3 0.7 0.3 0.7 0.2 0.8 0.3 0.7 0.3 0.7 0.3 0.7 0.28 0.72 0.3 0.7 0.3 0.7 0.22 0.78 0.15 0.85 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="semiestado" />
+          <Variable name="Anteproyectos" />
+          <Variable name="ControlAutomatizado" />
+          <Variable name="Etica" />
+          <Variable name="Inteligencia_Artificial" />
+          <Variable name="Simulacion" />
+          <Variable name="Sistemas_Expertos" />
+        </Variables>
+        <Values>1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.1 0.9 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_deberes" />
+        </Variables>
+        <Values>0.1 0.2 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_talleres" />
+        </Variables>
+        <Values>0.1 0.2 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_lecciones" />
+        </Variables>
+        <Values>0.1 0.2 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_evaluaciones" />
+        </Variables>
+        <Values>0.1 0.2 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="estado_final" />
+          <Variable name="asist_general" />
+          <Variable name="semiestado" />
+        </Variables>
+        <Values>1.0 0.0 1.0 0.0 1.0 0.0 0.0 1.0</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_evaluaciones_1" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_lecciones_1" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_talleres_1" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_deberes_1" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_evaluaciones_2" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_lecciones_2" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_talleres_2" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_deberes_2" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_evaluaciones_3" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_lecciones_3" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_talleres_3" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_deberes_3" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_talleres_4" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_talleres_5" />
+        </Variables>
+        <Values>0.29 0.71</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_lecciones_4" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_lecciones_5" />
+        </Variables>
+        <Values>0.2 0.8</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_evaluaciones_4" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_evaluaciones_5" />
+        </Variables>
+        <Values>0.3 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_deberes_4" />
+        </Variables>
+        <Values>0.3333333333333333 0.3333333333333333 0.3333333333333333</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="prom_deberes_5" />
+        </Variables>
+        <Values>0.3 0.7</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="asist_general" />
+        </Variables>
+        <Values>0.5 0.5</Values>
+      </Potential>
+    </Potentials>
+    <AdditionalProperties>
+      <Property name="VisualPrecision" value="0.0" />
+      <Property name="KindOfGraph" value="directed" />
+      <Property name="Version" value="1.0" />
+    </AdditionalProperties>
+  </ProbNet>
+</ProbModelXML>
